@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HTML element</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>TO DO List</h1>
+	<ul id="todo-list">
+		<li>HauTK</li>
+		<li>ChienNd</li>
+		<li>MinhLV</li>
+		<li>ThanhTQ</li>
+	</ul>
+	<button onclick="createElement1()">Add</button>
+	<button onclick="removeElement()">Remove</button>
+<script>
+	var x = document.getElementById('todo-list');
+	// children show all element in parent element
+	// return an collection
+	console.log(x.children);
+	// access to first element and get text content in element
+	console.log(x.children[0].textContent);
+	// x.children[0].textContent = 'Ngoc Anh';
+	
+	var newLi = document.createElement('li');
+	// remove an element	
+	function removeElement(){
+		newLi.remove();
+	}
+
+	// Create new element
+	function createElement1() {
+		newLi.textContent = 'NgocAnh';
+		// add new element to an parent element
+		x.appendChild(newLi);
+	}
+
+</script>
+</body>
+</html>
+
+<!--	
+	Tips: 
+	Bat f12 tren chrome
+	select den element muon check
+	qua tab console go: $0 se hien thi luon element hient ai dang select
+-->
