@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- 
+- Sử dụng getElementsByTagName() để lấy ra danh sách các <p> có class là 'foo'
+- Lặp qua các phần tử và thay đổi nội dung của từng phần tử bằng cách append (thêm vào cuối) một đường link tới coders.tokyo site
+-->
+	<div>
+		<p class="foo">HauTK</p>
+		<p class="foo">HauTK</p>
+		<p class="hhh">ChienND</p>
+		<p class="hhh">ChienND</p>
+		<p class="foo">HauTK</p>
+	</div>
+	<script type="text/javascript">
+		var plist = document.getElementsByTagName('p');
+	  	var pClass = [];
+	 	for(let i = 0; i < plist.length; i++) {
+	 		if (plist[i].className === 'foo') {
+	 			pClass.push(plist[i]);
+	 			plist[i].innerHTML = plist[i].textContent + '<a href="https://school.coders-x.com/">coder X</a>';
+	 		}
+	 	}
+	 	console.log(pClass);
+	</script>
+</body>
+</html>
