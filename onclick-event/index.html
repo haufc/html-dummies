@@ -27,6 +27,7 @@
 			var newItem = txtItem.value;
 			todoList.push(newItem);
 			alert('Add success');
+			txtItem.value = '';
 		}
 		function gender() {
 			var listHtml = document.getElementById('todo-list');
@@ -37,6 +38,7 @@
 			console.log(content);
 			listHtml.innerHTML = content;
 		}
+		gender();
 	</script>
 </body>
 </html>

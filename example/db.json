@@ -1,0 +1,13 @@
+{
+  "posts": [
+    { "id": 1, "name": "HauTK", "age": "19", "address": "Ha Noi" },
+    { "id": 2, "name": "ChienND", "age": "19", "address": "Ha Noi" },
+    { "id": 3, "name": "MinhLV", "age": "19", "address": "Ha Noi" },
+	{ "id": 4, "name": "ThanhTQ", "age": "19", "address": "Ha Noi" },
+    { "id": 5, "name": "TuNV", "age": "20", "address": "Ha Noi" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
